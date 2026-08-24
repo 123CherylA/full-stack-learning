@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My profile</title>
+        <!-- <link rel="stylesheet" href="day_1.css"> -->
+         <script src="student_analyzer.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <header class="bg-gray-800 py-2 border-b border-gray-300">
+            <nav class="flex justify-center gap-5 flex-row">
+                <a href="#" class="no-underline p-2.5 text-red-500 text-lg">Home</a>
+                <a href="#" class="no-underline p-2.5 text-gray-700 text-lg">About</a>
+                <a href="#" class="no-underline p-2.5 text-gray-700 text-lg">Contact</a>
+                <a href="#" class="no-underline p-2.5 text-gray-700 text-lg">Skills</a>
+            </nav>
+        </header>
+        <main>
+            <h1 class="text-center">Akinboboye Abisade</h1>
+            <p>Welcome to my personal website!</p>
+            <img src="https://images.unsplash.com/photo-1617196038820-1e3f5b8c6d2e" alt="My Profile Picture" class="h-32 w-32 border my-5 rounded-full mx-auto">
+        <section class="m-5 p-5 border border-gray-300 rounded">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Machine Learning</li>
+            </ul>
+        </section>
+        <section class="m-5 p-5 border border-gray-300 rounded">
+            <h2>What I want to learn</h2>
+            <ol>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>PostgreSQL</li>
+                <li>Tailwind CSS</li>
+            </ol>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <section>
+                    <h2>Project One</h2>
+                    <p>This is a project I worked on that showcases my skills in web development. It includes a responsive design and interactive features.</p> 
+                    <a href="#">View Project</a>
+                </section>
+            <section>
+            <h2>Project Two</h2>
+            <p>This is another project I worked on that demonstrates my ability to create dynamic web applications. It includes user authentication and data visualization.</p>
+            <a href="#">View Project</a>
+        </section>
+        </div>
+        </main>
+
+        <form class="flex flex-col items-center">
+    <label for="name">Name:</label>
+    <input type="text" id="name" class="focus:outline-none focus:ring-2 focus:ring-blue-500 w-[250px] p-2.5 m-2.5 border border-gray-300 rounded ">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" class="focus:outline-none focus:ring-2 focus:ring-blue-500 w-[250px] p-2.5 m-2.5 border border-gray-300 rounded ">
+
+    <label for="message">Message:</label>
+    <textarea id="message" class="focus:outline-none focus:ring-2 focus:ring-blue-500 w-[250px] p-2.5 m-2.5 border border-gray-300 rounded "></textarea>
+
+    <button type="submit" class="m-2.5 text-base p-2 hover:bg-gray-200  bg-gray-100 border-0 rounded cursor-pointer ">Submit</button>
+</form>
+        <footer class="text-center">
+    <p>&copy; 2026 Akinboboye Abisade</p>
+</footer>
+    </body>
+</html>
+        
