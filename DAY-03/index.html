@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Score Tracker</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen p-8">
+
+    <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md">
+
+        <h1 class="text-3xl font-bold mb-6 text-center">
+            Student Score Tracker
+        </h1>
+
+        <!-- Student Form -->
+        <form id="studentForm" class="space-y-4">
+
+            <!-- Student Name -->
+            <div>
+                <label for="studentName" class="block font-semibold mb-1">
+                    Student Name
+                </label>
+
+                <input
+                    type="text"
+                    id="studentName"
+                    placeholder="Enter student name"
+                    class="w-full p-3 border rounded-lg"
+                >
+            </div>
+
+            <!-- Score -->
+            <div>
+                <label for="score" class="block font-semibold mb-1">
+                    Score
+                </label>
+
+                <input
+                    type="number"
+                    id="score"
+                    placeholder="Enter score"
+                    class="w-full p-3 border rounded-lg"
+                >
+            </div>
+
+            <!-- Submit Button -->
+            <button
+                type="submit"
+                class="w-full p-3 bg-blue-500 text-white rounded-lg"
+            >
+                Add Student
+            </button>
+
+        </form>
+
+        <!-- Result -->
+        <div
+            id="result"
+            class="mt-6 p-4 whitespace-pre-line"
+        ></div>
+
+        <!-- Student List -->
+        <div class="mt-6">
+
+            <h2 class="text-xl font-bold mb-4">
+                Students
+            </h2>
+
+            <div id="studentList" class="space-y-3"></div>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="localstorage.js"></script>
+
+</body>
+</html>
